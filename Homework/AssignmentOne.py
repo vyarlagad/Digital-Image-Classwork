@@ -8,20 +8,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Set Constant Image Path
-original_image_path = "/Users/Vasukesh/Desktop/Digital-Image-Classwork/Images/Pele.png"
-original_image_path2 = "/Users/Vasukesh/Desktop/Digital-Image-Classwork/Images/disk_cassette.png"
+original_image_path = "/Users/vyarlaga/Desktop/Digital-Image-Classwork/Images/Pele.png"
+original_image_path2 = "/Users/vyarlaga/Desktop/Digital-Image-Classwork/Images/disk_cassette.png"
 
 # Create Constant For Marker Thickness (Points)
 Thickness = 8
-# Read Original Image
+# Read Original Images
 img = cv2.imread(original_image_path)
 img2 = cv2.imread(original_image_path2)
 
-# Create Hash Table For Circle Coordinates
+# Create Hash Table For Circle Coordinates for mapping
 lookupTable = {0:(208,66), 1:(473,5), 2:(197,181), 3:(481,299)}
 affineTable = {0:(50,50), 1:(200,50), 2:(50,200)}
 
-# capture shape of image
+# capture shape of images
 rows,cols,ch = img.shape
 rows1,cols1,ch1 = img2.shape
 
@@ -48,7 +48,7 @@ plt.figure(num=None, figsize=(18, 16), dpi=80, facecolor='w', edgecolor='k')
 
 #indicate Points Used on Original Image
 for i in range(0,len(lookupTable)):
-  img = cv2.circle(img,lookupTable[i], Thickness, (0,0,255), -1)
+  img = cv2.circle(img,lookupTable[i], Thickness-3, (0,0,255), -1)
 
 for j in range(0, len(affineTable)):
   img2 = cv2.circle(img2,affineTable[j],Thickness+8,(0,0,255),-1)
