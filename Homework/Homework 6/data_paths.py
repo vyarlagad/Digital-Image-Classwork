@@ -1,5 +1,0 @@
-data_path = 'C:/Users/timba/OneDrive/Projects/ImageProcessing/Project 6/cocacolaPic/'
-segment_1 = 'C:/Users/timba/OneDrive/Projects/ImageProcessing/Project 6/segment_1/'
-segment_2 = 'C:/Users/timba/OneDrive/Projects/ImageProcessing/Project 6/segment_2/'
-segment_3 = 'C:/Users/timba/OneDrive/Projects/ImageProcessing/Project 6/segment_3/'
-segment_4 = 'C:/Users/timba/OneDrive/Projects/ImageProcessing/Project 6/segment_4/'
