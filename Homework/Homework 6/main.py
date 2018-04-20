@@ -48,4 +48,4 @@ print(np.amax(hsv[141, 140:190]))
 mask = cv2.inRange(hsv, lower_red, upper_red)
 res = cv2.bitwise_and(img, img, mask=mask)
 
-cv2.imshow('bush did 911',hsv)
+cv2.imshow('hello Chak',hsv)
